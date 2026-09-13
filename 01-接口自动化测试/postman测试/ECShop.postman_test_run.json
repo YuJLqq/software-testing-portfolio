@@ -1,0 +1,871 @@
+{
+	"id": "458eeeca-5382-4c5c-9be8-fb1fc4e164f8",
+	"name": "ECShop",
+	"timestamp": "2026-06-26T11:14:53.167Z",
+	"collection_id": "56106664-36642273-7eba-4ad1-bb9d-703e5c63f6ed",
+	"folder_id": 0,
+	"environment_id": "56106664-d326ceb4-426b-419a-a7d8-5253cdf1b9e9",
+	"totalPass": 36,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "d417d90a-7937-45bb-b8d5-ae55778bf124",
+			"name": "reg001-ECShop前端注册接口001 Copy",
+			"time": 46,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 12,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 12,
+					"fail": 0
+				}
+			},
+			"times": [
+				67,
+				49,
+				43,
+				48,
+				42,
+				74,
+				46,
+				46,
+				41,
+				51,
+				54,
+				46
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				},
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				},
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				},
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				},
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				},
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				},
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				},
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				},
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				},
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				},
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				},
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "ba92133d-21ff-498b-9f75-e99771244882",
+			"name": "reg002-用户名长度小于三个字符",
+			"time": 38,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				36,
+				36,
+				33,
+				30,
+				36,
+				37,
+				39,
+				33,
+				34,
+				34,
+				33,
+				38
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "dd3664e9-93ee-4796-b03e-afb16ecc75f9",
+			"name": "reg003-用户名重复",
+			"time": 36,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				37,
+				40,
+				38,
+				37,
+				35,
+				34,
+				36,
+				35,
+				35,
+				36,
+				33,
+				36
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "3b37c9f7-a023-423c-8a7a-235f1ba06532",
+			"name": "reg004-用户名为空",
+			"time": 34,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				26,
+				37,
+				35,
+				37,
+				37,
+				38,
+				35,
+				35,
+				36,
+				36,
+				33,
+				34
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "e37c8130-d7d7-4f09-a64a-c6e6de183fb4",
+			"name": "reg005-邮箱中包含特殊字符",
+			"time": 35,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				25,
+				37,
+				37,
+				38,
+				38,
+				41,
+				24,
+				25,
+				38,
+				35,
+				27,
+				35
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "60b88a11-73ef-48f5-8cc2-373870e33364",
+			"name": "reg006-邮箱中包含两个或两个以上@符号",
+			"time": 35,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				27,
+				34,
+				35,
+				37,
+				36,
+				39,
+				34,
+				35,
+				35,
+				35,
+				33,
+				35
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "03a0c6bc-bbe7-4aeb-aae0-66170b9e4689",
+			"name": "reg007-邮箱中包含中文",
+			"time": 33,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				37,
+				38,
+				34,
+				38,
+				35,
+				32,
+				35,
+				36,
+				35,
+				27,
+				36,
+				33
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "ebddb690-b5b6-4b85-a331-e0e696840b65",
+			"name": "reg008-使用已经注册成功的邮箱注册",
+			"time": 38,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				36,
+				40,
+				34,
+				38,
+				37,
+				38,
+				33,
+				35,
+				36,
+				33,
+				34,
+				38
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "e738a19d-726a-4c04-8358-1133fbaae9a2",
+			"name": "login-001 前端登录接口",
+			"time": 36,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				36,
+				41,
+				30,
+				25,
+				26,
+				39,
+				34,
+				36,
+				34,
+				34,
+				27,
+				36
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "1274516a-f4fb-4dd6-94d6-ca90c5931587",
+			"name": "login-002 登录密码错误",
+			"time": 36,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				37,
+				38,
+				38,
+				42,
+				27,
+				36,
+				36,
+				36,
+				36,
+				25,
+				36,
+				36
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "dd2762ec-6b9e-4b02-9c07-600c8e575f03",
+			"name": "login-003 用户名为空",
+			"time": 42,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				45,
+				29,
+				45,
+				41,
+				31,
+				32,
+				38,
+				37,
+				41,
+				42,
+				38,
+				42
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "18b97361-96f0-40ef-ad9e-856b95722e72",
+			"name": "login-004 密码为空",
+			"time": 43,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				40,
+				40,
+				46,
+				33,
+				30,
+				52,
+				29,
+				37,
+				35,
+				43,
+				39,
+				43
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "25da1fa7-48b9-47c3-8a44-73f1c96de842",
+			"name": "login-005 没有进行登录点击操作",
+			"time": 26,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 12,
+					"fail": 0
+				}
+			},
+			"times": [
+				25,
+				33,
+				35,
+				37,
+				35,
+				36,
+				23,
+				34,
+				38,
+				37,
+				27,
+				26
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "63307ce4-9185-47af-994d-af87f9a11adc",
+			"name": "login-006 登录用户名错误",
+			"time": 35,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				36,
+				33,
+				33,
+				35,
+				36,
+				33,
+				35,
+				35,
+				35,
+				34,
+				35,
+				35
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "76c72276-67af-4cf6-bfdb-88cdd70709e6",
+			"name": "login-007 用户名或密码为空",
+			"time": 23,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				37,
+				23,
+				36,
+				35,
+				34,
+				34,
+				26,
+				37,
+				36,
+				35,
+				35,
+				23
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "15a1631f-3346-4674-8822-be247d0da7bd",
+			"name": "进入登录页面接口",
+			"time": 36,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				37,
+				33,
+				35,
+				29,
+				41,
+				35,
+				35,
+				35,
+				35,
+				25,
+				36,
+				36
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "02fa40cc-a8f3-4379-961c-40a8e2d3e44e",
+			"name": "前端首页请求接口",
+			"time": 36,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				26,
+				35,
+				37,
+				40,
+				50,
+				35,
+				36,
+				35,
+				33,
+				33,
+				26,
+				36
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "955bc109-b924-4217-8b11-836214cb8393",
+			"name": "前端退出登录接口",
+			"time": 35,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				37,
+				35,
+				35,
+				37,
+				39,
+				38,
+				33,
+				37,
+				33,
+				33,
+				25,
+				35
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		}
+	],
+	"count": 12,
+	"totalTime": 7732,
+	"collection": {
+		"requests": [
+			{
+				"id": "d417d90a-7937-45bb-b8d5-ae55778bf124",
+				"method": "POST"
+			},
+			{
+				"id": "ba92133d-21ff-498b-9f75-e99771244882",
+				"method": "POST"
+			},
+			{
+				"id": "dd3664e9-93ee-4796-b03e-afb16ecc75f9",
+				"method": "POST"
+			},
+			{
+				"id": "3b37c9f7-a023-423c-8a7a-235f1ba06532",
+				"method": "POST"
+			},
+			{
+				"id": "e37c8130-d7d7-4f09-a64a-c6e6de183fb4",
+				"method": "POST"
+			},
+			{
+				"id": "60b88a11-73ef-48f5-8cc2-373870e33364",
+				"method": "POST"
+			},
+			{
+				"id": "03a0c6bc-bbe7-4aeb-aae0-66170b9e4689",
+				"method": "POST"
+			},
+			{
+				"id": "ebddb690-b5b6-4b85-a331-e0e696840b65",
+				"method": "POST"
+			},
+			{
+				"id": "e738a19d-726a-4c04-8358-1133fbaae9a2",
+				"method": "POST"
+			},
+			{
+				"id": "1274516a-f4fb-4dd6-94d6-ca90c5931587",
+				"method": "POST"
+			},
+			{
+				"id": "dd2762ec-6b9e-4b02-9c07-600c8e575f03",
+				"method": "POST"
+			},
+			{
+				"id": "18b97361-96f0-40ef-ad9e-856b95722e72",
+				"method": "POST"
+			},
+			{
+				"id": "25da1fa7-48b9-47c3-8a44-73f1c96de842",
+				"method": "POST"
+			},
+			{
+				"id": "63307ce4-9185-47af-994d-af87f9a11adc",
+				"method": "POST"
+			},
+			{
+				"id": "76c72276-67af-4cf6-bfdb-88cdd70709e6",
+				"method": "POST"
+			},
+			{
+				"id": "15a1631f-3346-4674-8822-be247d0da7bd",
+				"method": "GET"
+			},
+			{
+				"id": "02fa40cc-a8f3-4379-961c-40a8e2d3e44e",
+				"method": "GET"
+			},
+			{
+				"id": "955bc109-b924-4217-8b11-836214cb8393",
+				"method": "GET"
+			}
+		]
+	}
+}

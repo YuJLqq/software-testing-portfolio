@@ -1,0 +1,1327 @@
+{
+	"info": {
+		"_postman_id": "36642273-7eba-4ad1-bb9d-703e5c63f6ed",
+		"name": "ECShop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "56106664"
+	},
+	"item": [
+		{
+			"name": "front",
+			"item": [
+				{
+					"name": "redister",
+					"item": [
+						{
+							"name": "reg001-ECShop前端注册接口001 Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function ()\r",
+											" { pm.response.to.have.status(200); });\r",
+											" pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"注册成功\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Length",
+										"value": "100000",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "{{username}}",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "{{email}}",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "{{password}}",
+											"type": "text"
+										},
+										{
+											"key": "confirm_password",
+											"value": "{{con_password}}",
+											"type": "text"
+										},
+										{
+											"key": "agreement",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "act",
+											"value": "act_register",
+											"type": "text"
+										},
+										{
+											"key": "extend_field5",
+											"value": "12345678978",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/ECShop/user.php?act=register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"ECShop",
+										"user.php"
+									],
+									"query": [
+										{
+											"key": "act",
+											"value": "register"
+										},
+										{
+											"key": "178226397406565",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "reg002-用户名长度小于三个字符",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Length",
+										"value": "100000",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "zh",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "zahngqq.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "confirm_password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "agreement",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "act",
+											"value": "act_register",
+											"type": "text"
+										},
+										{
+											"key": "extend_field5",
+											"value": "12345678978",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/ECShop/user.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"ECShop",
+										"user.php"
+									],
+									"query": [
+										{
+											"key": "178226397406565",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "reg003-用户名重复",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Length",
+										"value": "100000",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "zh",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "zahngqq.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "confirm_password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "agreement",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "act",
+											"value": "act_register",
+											"type": "text"
+										},
+										{
+											"key": "extend_field5",
+											"value": "12345678978",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/ECShop/user.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"ECShop",
+										"user.php"
+									],
+									"query": [
+										{
+											"key": "178226397406565",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "reg004-用户名为空",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Length",
+										"value": "100000",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "zahngqq.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "confirm_password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "agreement",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "act",
+											"value": "act_register",
+											"type": "text"
+										},
+										{
+											"key": "extend_field5",
+											"value": "12345678978",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/ECShop/user.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"ECShop",
+										"user.php"
+									],
+									"query": [
+										{
+											"key": "178226397406565",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "reg005-邮箱中包含特殊字符",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Length",
+										"value": "100000",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "zhangker",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "zhangke@qq.com！",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "confirm_password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "agreement",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "act",
+											"value": "act_register",
+											"type": "text"
+										},
+										{
+											"key": "extend_field5",
+											"value": "12345678978",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/ECShop/user.php?act=register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"ECShop",
+										"user.php"
+									],
+									"query": [
+										{
+											"key": "act",
+											"value": "register"
+										},
+										{
+											"key": "178226397406565",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "reg006-邮箱中包含两个或两个以上@符号",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Length",
+										"value": "100000",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "zhangkew",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "zhangke@@qq.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "confirm_password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "agreement",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "act",
+											"value": "act_register",
+											"type": "text"
+										},
+										{
+											"key": "extend_field5",
+											"value": "12345678978",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/ECShop/user.php?act=register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"ECShop",
+										"user.php"
+									],
+									"query": [
+										{
+											"key": "act",
+											"value": "register"
+										},
+										{
+											"key": "178226397406565",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "reg007-邮箱中包含中文",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Length",
+										"value": "100000",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "zhangkee",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "zhang三@qq.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "confirm_password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "agreement",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "act",
+											"value": "act_register",
+											"type": "text"
+										},
+										{
+											"key": "extend_field5",
+											"value": "12345678978",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/ECShop/user.php?act=register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"ECShop",
+										"user.php"
+									],
+									"query": [
+										{
+											"key": "act",
+											"value": "register"
+										},
+										{
+											"key": "178226397406565",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "reg008-使用已经注册成功的邮箱注册",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Length",
+										"value": "100000",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "zhangket",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "zhangke@qq.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "confirm_password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "agreement",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "act",
+											"value": "act_register",
+											"type": "text"
+										},
+										{
+											"key": "extend_field5",
+											"value": "12345678978",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/ECShop/user.php?act=register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"ECShop",
+										"user.php"
+									],
+									"query": [
+										{
+											"key": "act",
+											"value": "register"
+										},
+										{
+											"key": "178226397406565",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "login",
+					"item": [
+						{
+							"name": "login-001 前端登录接口",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Length",
+										"value": "100000",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "zhangke",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "zhangke@qq.com",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "confirm_password",
+											"value": "123456",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "agreement",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "act",
+											"value": "act_register",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "extend_field5",
+											"value": "12345678978",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "act",
+											"value": "act_login",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/ECShop/user.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"ECShop",
+										"user.php"
+									],
+									"query": [
+										{
+											"key": "178226397406565",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login-002 登录密码错误",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Length",
+										"value": "100000",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "zhangke",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "zhangke@qq.com",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"type": "text"
+										},
+										{
+											"key": "confirm_password",
+											"value": "123456",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "agreement",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "act",
+											"value": "act_login",
+											"type": "text"
+										},
+										{
+											"key": "extend_field5",
+											"value": "12345678978",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/ECShop/user.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"ECShop",
+										"user.php"
+									],
+									"query": [
+										{
+											"key": "178226397406565",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login-003 用户名为空",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Length",
+										"value": "100000",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "zhangke@qq.com",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"type": "text"
+										},
+										{
+											"key": "confirm_password",
+											"value": "123456",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "agreement",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "act",
+											"value": "act_register",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "extend_field5",
+											"value": "12345678978",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/ECShop/user.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"ECShop",
+										"user.php"
+									],
+									"query": [
+										{
+											"key": "178226397406565",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login-004 密码为空",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Length",
+										"value": "100000",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "adminn",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "zhangke@qq.com",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "confirm_password",
+											"value": "123456",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "agreement",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "act",
+											"value": "act_register",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "extend_field5",
+											"value": "12345678978",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/ECShop/user.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"ECShop",
+										"user.php"
+									],
+									"query": [
+										{
+											"key": "178226397406565",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login-005 没有进行登录点击操作",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function ()\r",
+											" { pm.response.to.have.status(200); });\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Length",
+										"value": "100000",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "adminn",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "zhangke@qq.com",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "confirm_password",
+											"value": "123456",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "agreement",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "act",
+											"value": "act_login",
+											"type": "text"
+										},
+										{
+											"key": "extend_field5",
+											"value": "12345678978",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/ECShop/user.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"ECShop",
+										"user.php"
+									],
+									"query": [
+										{
+											"key": "178226397406565",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login-006 登录用户名错误",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Length",
+										"value": "100000",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "adminnn",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "zhangke@qq.com",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "confirm_password",
+											"value": "123456",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "agreement",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "act",
+											"value": "act_login",
+											"type": "text"
+										},
+										{
+											"key": "extend_field5",
+											"value": "12345678978",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/ECShop/user.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"ECShop",
+										"user.php"
+									],
+									"query": [
+										{
+											"key": "178226397406565",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login-007 用户名或密码为空",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Length",
+										"value": "100000",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "zhangke@qq.com",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "confirm_password",
+											"value": "123456",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "agreement",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "act",
+											"value": "act_login",
+											"type": "text"
+										},
+										{
+											"key": "extend_field5",
+											"value": "12345678978",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/ECShop/user.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"ECShop",
+										"user.php"
+									],
+									"query": [
+										{
+											"key": "178226397406565",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "other'",
+			"item": [
+				{
+					"name": "进入登录页面接口",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/ECShop/index.php?act=login ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"ECShop",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "act",
+									"value": "login "
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "前端首页请求接口",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/ECShop/index.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"ECShop",
+								"index.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "前端退出登录接口",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/ECShop/user.php?act=logout\n",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"ECShop",
+								"user.php"
+							],
+							"query": [
+								{
+									"key": "act",
+									"value": "logout\n"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "back",
+			"item": []
+		}
+	]
+}
